@@ -57,6 +57,8 @@ Is this snake?
         stats:
             {errorDetails: true}
         };
+      1. in package.json add to scripts:
+        > "dev": "webpack --mode development --watch"
 ## How to work on it:
 - To run django side:  
     1. conda activate the environment you created.
