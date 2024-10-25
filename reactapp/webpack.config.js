@@ -1,5 +1,5 @@
 const path = require("path");
-const webpack = require("webpack");
+// const webpack = require("webpack");
 
 module.exports = {
   entry: "./src/index.js",
@@ -8,15 +8,11 @@ module.exports = {
     filename: "main.js",
   },
   module: {
-    rules: [
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: {
-          loader: "babel-loader",
-        },
-      },
-    ],
+    rules: [{
+      test: /\.js$/,
+      exclude: /node_modules/,
+      use: {loader: "babel-loader"}
+    }]
   },
   optimization: {
     minimize: true,
