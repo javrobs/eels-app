@@ -12,8 +12,10 @@ Is this snake?
 
 ## How to set up
 - Django side (with conda):
-    1. Create a new conda environment
-    1. Install pip from conda
+    1. Create a new conda environment:
+        > conda create --name \<your-env>
+    1. Install pip from conda:
+        > conda install pip
     1. Install django using
         > pip install django
     1. Install django rest framework (to use django as api)
